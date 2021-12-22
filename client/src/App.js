@@ -1,9 +1,40 @@
-import logo from './logo.svg';
 import React from 'react';
 import './normalize.css';
 import './webflow.css';
 import './App.css';
 import './doyle-performance-group.webflow.css';
+import './js/webflow.js';
+
+import DoyleLogo from './images/DOYLE-LOGO.svg';
+import LightInstagram from './images/Light-instagram.svg';
+import LightTwitter from './images/Light-twitter.svg';
+import FacebookSVG from './images/001-facebook.svg';
+import LinkedinSVG from './images/002-linkedin.svg';
+import MenuSVG from './images/menu-324x242x.svg';
+import ArrowDown from './images/arrow-down24x242x.svg';
+import ArrowRight from './images/arrow-right48x482x.svg';
+import TitleAccent from './images/Title-Accent.svg';
+import ListIconDark from './images/list-icon-dark.svg';
+import FiltersIconDark from './images/filters-icon-dark.svg';
+import DashboardIconDark from './images/dashboard-2-icon-dark.svg';
+import Purp from './images/purp.svg';
+import CheckMark from './images/check24x242x.svg';
+import ChevronRight from './images/chevron-right24x242x.svg';
+import InstagramWhite from './images/Instagram-White.svg';
+import ArrowRightWhite from './images/arrow-right-white48x482x.svg';
+import IG from './images/IG.svg';
+import FacebookF from './images/facebook-f.svg';
+import LinkedinTwo from './images/linkedin.svg';
+import TwitterSVG from './images/001-twitter.svg'
+
+
+
+
+
+
+
+
+
 
 function App() {
   return (
@@ -13,7 +44,7 @@ function App() {
         <div id="w-node-_496782d7-8ca9-71e3-94b4-cbb44a84661d-4a84661b" class="navigation-bar">
           <div class="navigation">
             <div id="w-node-_496782d7-8ca9-71e3-94b4-cbb44a84661f-4a84661b" class="nav-left">
-              <a href="index.html" aria-current="page" class="brand-2 w-nav-brand w--current"><img src="./images/DOYLE-LOGO.svg" loading="lazy" alt=""/></a>
+              <a href="index.html" aria-current="page" class="brand-2 w-nav-brand w--current"><img src={DoyleLogo} loading="lazy" alt=""/></a>
               <div id="w-node-_496782d7-8ca9-71e3-94b4-cbb44a846622-4a84661b" class="nav-separator"></div>
               <nav role="navigation" class="nav-menu-2 w-nav-menu">
                 <div class="menu-grid">
@@ -27,7 +58,7 @@ function App() {
             </div>
             <div id="w-node-_496782d7-8ca9-71e3-94b4-cbb44a84662d-4a84661b" class="nav-right">
               <div id="w-node-_496782d7-8ca9-71e3-94b4-cbb44a84662e-4a84661b" class="social-icon-wrapper">
-                <a href="https://www.instagram.com/doylemanagement/" target="_blank" class="social-icon w-inline-block"><img src="./images/Light-instagram.svg" loading="lazy" alt="" class="icon-2"/>
+                <a href="https://www.instagram.com/doylemanagement/" target="_blank" class="social-icon w-inline-block"><img src={LightInstagram} loading="lazy" alt="" class="icon-2"/>
                   <div class="social-hover-wrapper">
                     <div class="social-outline"></div>
                   </div>
@@ -35,17 +66,17 @@ function App() {
                 <a href="https://twitter.com/DoyleManagement" target="_blank" class="social-icon w-inline-block">
                   <div class="social-hover-wrapper">
                     <div class="social-outline"></div>
-                  </div><img src="./images/Light-twitter.svg" loading="lazy" alt="" class="icon-2"/>
+                  </div><img src={LightTwitter} loading="lazy" alt="" class="icon-2"/>
                 </a>
                 <a href="https://www.facebook.com/DoyleManagement/" target="_blank" class="social-icon w-inline-block">
                   <div class="social-hover-wrapper">
                     <div class="social-outline"></div>
-                  </div><img src="./images/001-facebook.svg" loading="lazy" alt="" class="icon-2"/>
+                  </div><img src={FacebookSVG} loading="lazy" alt="" class="icon-2"/>
                 </a>
                 <a href="https://www.linkedin.com/company/doyle-management-group-limited/about/" target="_blank" class="social-icon w-inline-block">
                   <div class="social-hover-wrapper">
                     <div class="social-outline"></div>
-                  </div><img src="./images/002-linkedin.svg" loading="lazy" alt="" class="icon-2"/>
+                  </div><img src={LinkedinSVG} loading="lazy" alt="" class="icon-2"/>
                 </a>
               </div>
               <a href="contact.html" data-w-id="496782d7-8ca9-71e3-94b4-cbb44a84663b" class="navigation-button w-inline-block">
@@ -62,7 +93,7 @@ function App() {
               </a>
             </div>
             <div id="w-node-_496782d7-8ca9-71e3-94b4-cbb44a846644-4a84661b" class="menu-button w-nav-button">
-              <div class="menu-link"><img src="./images/menu-324x242x.svg" loading="lazy" alt="" class="menu-icon"/></div>
+              <div class="menu-link"><img src={MenuSVG} loading="lazy" alt="" class="menu-icon"/></div>
             </div>
           </div>
         </div>
@@ -112,7 +143,7 @@ function App() {
             <div class="subtitle white">Doyle Sports Performance</div>
           </div>
           <div id="w-node-_8e07c8f2-059d-6f6d-2fac-5813639df6f0-df13bae9" data-w-id="8e07c8f2-059d-6f6d-2fac-5813639df6f0" class="hover-link-wrapper">
-            <a href="#About" class="hover-link w-inline-block"><img src="./images/arrow-down24x242x.svg" loading="lazy" width="24" alt="" class="scroll-icon"/></a>
+            <a href="#About" class="hover-link w-inline-block"><img src={ArrowDown} loading="lazy" width="24" alt="" class="scroll-icon"/></a>
           </div>
           <div id="w-node-d71299dc-e2cf-e714-cc8e-cbf4e6f5ae15-df13bae9" class="hero-content-wrapper">
             <div>
@@ -140,7 +171,7 @@ function App() {
                     <div class="stacked-description">
                       <div class="subtitle">BReakthrough athlete</div>
                       <h4></h4>
-                    </div><img src="./images/arrow-right48x482x.svg" loading="lazy" data-w-id="4063be45-b8b3-9a31-cad9-bfe36485df5b" id="w-node-_4063be45-b8b3-9a31-cad9-bfe36485df5b-df13bae9" alt="" class="list-item-arrow"/>
+                    </div><img src={ArrowRight} loading="lazy" data-w-id="4063be45-b8b3-9a31-cad9-bfe36485df5b" id="w-node-_4063be45-b8b3-9a31-cad9-bfe36485df5b-df13bae9" alt="" class="list-item-arrow"/>
                   </a>
                 </div>
               </div>
@@ -179,7 +210,7 @@ function App() {
                         <div class="body-display-2">Our performance group has accounted for 34 Olympic Medals spanning over the last 3 summer Olympic Games. In a combined effort by our athletes and coaches during the 2016 Rio de Janeiro Olympic Games, Doyle Sports Performance obtained 14 medals, placing us fourth overall if we were represented as a country. By medal count, we are the number ONE global agency in Track &amp; Field.</div>
                       </div>
                     </div>
-                  </div><img src="./images/Title-Accent.svg" loading="lazy" alt="" class="title-accent"/>
+                  </div><img src={TitleAccent} loading="lazy" alt="" class="title-accent"/>
                 </div>
               </div>
             </div>
@@ -195,7 +226,7 @@ function App() {
               </div>
               <div class="clip">
                 <h1 class="large-heading webkit-transform-1">Our Services.</h1>
-              </div><img src="./images/Title-Accent.svg" loading="lazy" alt="" class="title-accent _2"/>
+              </div><img src={TitleAccent} loading="lazy" alt="" class="title-accent _2"/>
             </div>
             <div id="w-node-_70edc27a-5d85-b4b7-cc4a-a4055e230b7f-df13bae9" class="clip">
               <a href="contact.html" class="button w-inline-block webkit-transform-1">
@@ -207,7 +238,7 @@ function App() {
             <div data-w-id="740c604e-5a91-f71f-7b54-c6974b436c83" class="card-hover-item webkit-transform-5">
               <div class="card-circle"></div>
               <div class="services-card">
-                <div class="icon"><img src="./images/list-icon-dark.svg" loading="lazy" alt=""/></div>
+                <div class="icon"><img src={ListIconDark} loading="lazy" alt=""/></div>
                 <div class="feature-card-info">
                   <div class="feature-card-description">
                     <h3 class="heading">Consultations</h3>
@@ -226,7 +257,7 @@ function App() {
             <div data-w-id="fc9bc2c3-441c-49e9-3161-c6e9cd50542d" class="card-hover-item webkit-transform-6">
               <div class="card-circle"></div>
               <div class="services-card">
-                <div class="icon"><img src="./images/filters-icon-dark.svg" loading="lazy" alt=""/></div>
+                <div class="icon"><img src={FiltersIconDark} loading="lazy" alt=""/></div>
                 <div class="feature-card-info">
                   <div class="feature-card-description">
                     <h3 class="heading">Human Optimization</h3>
@@ -245,7 +276,7 @@ function App() {
             <div data-w-id="d3404f02-a3e3-7279-5052-cdcdd7aa3af9" class="card-hover-item webkit-transform-6">
               <div class="card-circle"></div>
               <div class="services-card">
-                <div class="icon"><img src="./images/dashboard-2-icon-dark.svg" loading="lazy" alt=""/></div>
+                <div class="icon"><img src={DashboardIconDark} loading="lazy" alt=""/></div>
                 <div class="feature-card-info">
                   <div class="feature-card-description">
                     <h3>Education</h3>
@@ -276,7 +307,7 @@ function App() {
                       <h2>We&#x27;re changing the way an agency can enhance athletic performance.</h2>
                       <a href="contact.html" class="button w-inline-block">
                         <div class="button-text">Schedule a call</div>
-                      </a><img src="./images/purp.svg" loading="lazy" alt="" class="accent-grey-top"/>
+                      </a><img src={Purp} loading="lazy" alt="" class="accent-grey-top"/>
                     </div>
                   </div>
                 </div>
@@ -333,7 +364,7 @@ function App() {
               </div>
               <div class="clip">
                 <h1 class="large-heading webkit-transform-1">Our Clients &amp; Athletes.</h1>
-              </div><img src="./images/Title-Accent.svg" loading="lazy" alt="" class="title-accent _2"/>
+              </div><img src={TitleAccent} loading="lazy" alt="" class="title-accent _2"/>
             </div>
             <div id="w-node-_4aa1e293-2ce7-c7b6-5938-b5dfd439db55-df13bae9" class="clip">
               <a href="athletes.html" class="button w-inline-block webkit-transform-1">
@@ -402,7 +433,7 @@ function App() {
                   </div>
                   <div class="left-intro small-width">
                     <h1 id="w-node-f08c1eb2-3aea-c216-125c-3d1168acbed8-df13bae9">Performance Outcomes</h1>
-                  </div><img src="./images/Title-Accent.svg" loading="lazy" alt="" class="title-accent _4"/>
+                  </div><img src={TitleAccent} loading="lazy" alt="" class="title-accent _4"/>
                 </div>
                 <div class="body-display-3 dual-paragraph">We have over 30 unique testing metrics directly related to key football performance indicators. These metrics create a measurable path to achieving our goals through an established, specific criteria set. <br/>This allows each player to attain their objectives within a certain time frame and bring them to the top of their game. Athletes with increased endurance and speed equates to more championship, higher player value, and increased revenue for agencies, federations, clubs, players, and worldwide brands.</div>
               </div>
@@ -434,15 +465,15 @@ function App() {
               </div>
               <div id="w-node-_9e302ef9-a044-afc5-3392-3585167ef4fb-df13bae9" class="checklist">
                 <div class="checklist-item">
-                  <div id="w-node-c401ca72-aae4-9c20-edba-400cc2545a1a-df13bae9" class="checklist-icon"><img src="./images/check24x242x.svg" loading="lazy" width="12" alt=""/></div>
+                  <div id="w-node-c401ca72-aae4-9c20-edba-400cc2545a1a-df13bae9" class="checklist-icon"><img src={CheckMark} loading="lazy" width="12" alt=""/></div>
                   <div id="w-node-_158353d8-f5c3-bf30-52a2-714256d40766-df13bae9" class="body-display">Schedule a call with us.</div>
                 </div>
                 <div class="checklist-item">
-                  <div id="w-node-fa1f8cec-23d9-cc72-cc5a-6169aabb1732-df13bae9" class="checklist-icon"><img src="./images/check24x242x.svg" loading="lazy" width="12" alt=""/></div>
+                  <div id="w-node-fa1f8cec-23d9-cc72-cc5a-6169aabb1732-df13bae9" class="checklist-icon"><img src={CheckMark} loading="lazy" width="12" alt=""/></div>
                   <div id="w-node-fa1f8cec-23d9-cc72-cc5a-6169aabb1733-df13bae9" class="body-display">Develop a plan.</div>
                 </div>
                 <div class="checklist-item">
-                  <div id="w-node-_9fb60b98-6b85-1cf8-84f5-4c9583a249af-df13bae9" class="checklist-icon"><img src="./images/check24x242x.svg" loading="lazy" width="12" alt=""/></div>
+                  <div id="w-node-_9fb60b98-6b85-1cf8-84f5-4c9583a249af-df13bae9" class="checklist-icon"><img src={CheckMark} loading="lazy" width="12" alt=""/></div>
                   <div id="w-node-_9fb60b98-6b85-1cf8-84f5-4c9583a249b0-df13bae9" class="body-display">Train. Grow. Perform.</div>
                 </div>
               </div>
@@ -524,7 +555,7 @@ function App() {
                 </div>
               </div>
               <div id="w-node-b47cdab8-35ce-11bf-c69c-5170190a8715-df13bae9" class="circle-link-text">
-                <div>Schedule a call</div><img src="./images/chevron-right24x242x.svg" loading="lazy" id="w-node-b47cdab8-35ce-11bf-c69c-5170190a8718-df13bae9" alt="" class="arrow"/>
+                <div>Schedule a call</div><img src={ChevronRight} loading="lazy" id="w-node-b47cdab8-35ce-11bf-c69c-5170190a8718-df13bae9" alt="" class="arrow"/>
               </div>
             </a>
           </div>
@@ -569,7 +600,7 @@ function App() {
               <div role="listitem" class="w-dyn-item">
                 <div class="instagram-wrap"><img src="" loading="lazy" alt="" class="instagram-image"/>
                   <a data-w-id="22520f30-058e-4c70-daff-4ec1d1d07b0c" href="#" class="instagram-hover w-inline-block">
-                    <div class="instagram-icon"><img src="./images/Instagram-White.svg" loading="lazy" alt="" class="instagram-logo"/></div>
+                    <div class="instagram-icon"><img src={InstagramWhite} loading="lazy" alt="" class="instagram-logo"/></div>
                   </a>
                 </div>
               </div>
@@ -583,25 +614,25 @@ function App() {
       <div data-w-id="c6a86f47-145d-b8c8-1c44-2b43c426b91d" class="footer-section wf-section">
         <div class="wrapper">
           <div class="footer-wrapper">
-            <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b920-c426b91d" class="stacked-description"><img src="./images/DOYLE-LOGO.svg" loading="lazy" alt="" class="footer-logo"/></div>
+            <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b920-c426b91d" class="stacked-description"><img src={DoyleLogo} loading="lazy" alt="" class="footer-logo"/></div>
             <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b923-c426b91d" class="stacked-description">
               <div class="subtitle white">Follow us</div>
               <div class="service-menu-list white">
                 <a href="https://www.instagram.com/doylemanagement/" target="_blank" class="menu-list-item white small w-inline-block">
-                  <div class="team-social-icon small"><img src="./images/IG.svg" loading="lazy" alt=""/></div>
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b929-c426b91d">@doylemanagement</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-_9528b6cc-5881-ac46-ac4f-f9567a600aa3-c426b91d" alt="" class="list-item-arrow"/>
+                  <div class="team-social-icon small"><img src={IG} loading="lazy" alt=""/></div>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b929-c426b91d">@doylemanagement</div><img src={ArrowRightWhite} loading="lazy" id="w-node-_9528b6cc-5881-ac46-ac4f-f9567a600aa3-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
                 <a href="https://www.facebook.com/DoyleManagement/" target="_blank" class="menu-list-item white small w-inline-block">
-                  <div class="team-social-icon small"><img src="./images/facebook-f.svg" loading="lazy" alt=""/></div>
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b92d-c426b91d">@doylemanagement</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-_3ba5fc0d-00d1-0032-83ee-52ea90be55fb-c426b91d" alt="" class="list-item-arrow"/>
+                  <div class="team-social-icon small"><img src={FacebookF} loading="lazy" alt=""/></div>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b92d-c426b91d">@doylemanagement</div><img src={ArrowRightWhite} loading="lazy" id="w-node-_3ba5fc0d-00d1-0032-83ee-52ea90be55fb-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
                 <a href="https://www.linkedin.com/company/doyle-management-group-limited/about/" target="_blank" class="menu-list-item white small w-inline-block">
-                  <div class="team-social-icon small"><img src="./images/linkedin.svg" loading="lazy" alt=""/></div>
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b931-c426b91d">@doylemanagement</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-d7478ca7-7861-03a0-e2af-d807b17707c6-c426b91d" alt="" class="list-item-arrow"/>
+                  <div class="team-social-icon small"><img src={LinkedinTwo} loading="lazy" alt=""/></div>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b931-c426b91d">@doylemanagement</div><img src={ArrowRightWhite} loading="lazy" id="w-node-d7478ca7-7861-03a0-e2af-d807b17707c6-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
                 <a href="https://twitter.com/DoyleManagement" target="_blank" class="menu-list-item white small w-inline-block">
-                  <div class="team-social-icon small"><img src="./images/001-twitter.svg" loading="lazy" alt=""/></div>
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b935-c426b91d">@doylemanagement</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-_7efe9b07-839d-97d2-24ef-14c8a804e1f9-c426b91d" alt="" class="list-item-arrow"/>
+                  <div class="team-social-icon small"><img src={TwitterSVG} loading="lazy" alt=""/></div>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b935-c426b91d">@doylemanagement</div><img src={ArrowRightWhite} loading="lazy" id="w-node-_7efe9b07-839d-97d2-24ef-14c8a804e1f9-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
               </div>
             </div>
@@ -609,19 +640,19 @@ function App() {
               <div class="subtitle white">Navigation</div>
               <div class="service-menu-list white">
                 <a href="athletes.html" class="menu-list-item white w-inline-block">
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b93c-c426b91d" class="list-item-text">Athletes</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-eaf30d13-d8b4-446b-d7d2-d527e95fa99a-c426b91d" alt="" class="list-item-arrow"/>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b93c-c426b91d" class="list-item-text">Athletes</div><img src={ArrowRightWhite} loading="lazy" id="w-node-eaf30d13-d8b4-446b-d7d2-d527e95fa99a-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
                 <a href="/#About" class="menu-list-item white w-inline-block">
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b93f-c426b91d" class="list-item-text">About</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-_6e84a20c-5fdf-34ef-f5da-11af0219cea5-c426b91d" alt="" class="list-item-arrow"/>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b93f-c426b91d" class="list-item-text">About</div><img src={ArrowRightWhite} loading="lazy" id="w-node-_6e84a20c-5fdf-34ef-f5da-11af0219cea5-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
                 <a href="/#Services" class="menu-list-item white w-inline-block">
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b942-c426b91d" class="list-item-text">Services</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-_800e5816-2ed2-cae5-269d-04a046bc20b0-c426b91d" alt="" class="list-item-arrow"/>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b942-c426b91d" class="list-item-text">Services</div><img src={ArrowRightWhite} loading="lazy" id="w-node-_800e5816-2ed2-cae5-269d-04a046bc20b0-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
                 <a href="/#Engagement" class="menu-list-item white w-inline-block">
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b945-c426b91d" class="list-item-text">Engagement</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-_47bab92c-8f85-cc70-5380-573db90b0da1-c426b91d" alt="" class="list-item-arrow"/>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b945-c426b91d" class="list-item-text">Engagement</div><img src={ArrowRightWhite} loading="lazy" id="w-node-_47bab92c-8f85-cc70-5380-573db90b0da1-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
                 <a href="contact.html" class="menu-list-item white w-inline-block">
-                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b948-c426b91d" class="list-item-text">Contact</div><img src="./images/arrow-right-white48x482x.svg" loading="lazy" id="w-node-f9bea813-e527-c7ca-8e20-11a3cd4098db-c426b91d" alt="" class="list-item-arrow"/>
+                  <div id="w-node-c6a86f47-145d-b8c8-1c44-2b43c426b948-c426b91d" class="list-item-text">Contact</div><img src={ArrowRightWhite} loading="lazy" id="w-node-f9bea813-e527-c7ca-8e20-11a3cd4098db-c426b91d" alt="" class="list-item-arrow"/>
                 </a>
               </div>
             </div>
