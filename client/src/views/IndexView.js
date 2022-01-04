@@ -123,12 +123,12 @@ class IndexView extends React.Component {
                         <a href="https://www.facebook.com/DoyleManagement/" target="_blank" className="af-class-social-icon w-inline-block">
                           <div className="af-class-social-hover-wrapper">
                             <div className="af-class-social-outline" />
-                          </div><img src="images/001-facebook.svg" loading="lazy" alt className="af-class-icon-2" />
+                          </div><img src="images/001-facebook.svg" loading="lazy" style={{height:"48px"}} alt className="af-class-icon-2" />
                         </a>
                         <a href="https://www.linkedin.com/company/doyle-management-group-limited/about/" target="_blank" className="af-class-social-icon w-inline-block">
                           <div className="af-class-social-hover-wrapper">
                             <div className="af-class-social-outline" />
-                          </div><img src="images/002-linkedin.svg" loading="lazy" alt className="af-class-icon-2" />
+                          </div><img src="images/002-linkedin.svg" loading="lazy" style={{height:"48px"}} alt className="af-class-icon-2" />
                         </a>
                       </div>
                       <a href="contact.html" data-w-id="496782d7-8ca9-71e3-94b4-cbb44a84663b" className="af-class-navigation-button w-inline-block">
