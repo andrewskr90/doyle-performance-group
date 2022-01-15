@@ -4,19 +4,36 @@
 // Contributions start after line 43025
 
 //post webflow contributions
-
-function logSubmit(event) {
-  event.preventDefault();
-  console.log(contactFirstName.value, contactLastName.value, contactEmail.value, contactMessage.value)
-
-}
 const contactFirstName = document.getElementById('name');
 const contactLastName = document.getElementById('name-2');
 const contactEmail = document.getElementById('name-3');
 const contactMessage = document.getElementById('field');
 const contactForm = document.getElementById('contact-form');
 
+function sendEmail(firstname, lastname, email, message) {
+	window.Email.send({
+	Host: "smtp.gmail.com",
+	Username : "andrewskr90@gmail.com",
+	Password : "iiugyviddwwyfgeg",
+	To : email,
+	From : "andrewskr90@gmail.com",
+	Subject : `DPG Contact form message from ${firstname} ${lastname}`,
+	Body : message,
+	}).then(
+		message => {
+      contactForm.reset();
+      alert("mail sent successfully");
+  });
+}
+
+function logSubmit(event) {
+  event.preventDefault();
+  sendEmail(contactFirstName.value, contactLastName.value, contactEmail.value, contactMessage.value)
+
+}
+
 contactForm.addEventListener('submit', logSubmit);
+
 
 /*!
  * Webflow: Front-end site library
