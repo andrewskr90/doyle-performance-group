@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
-import './styles';
+import './styles/normalize.css';
+import './styles/webflow.css';
+import './styles/doyle-performance-group.webflow.css';
 import './scripts';
 import IndexView from './views/IndexView';
+import AthletesView from './views/AthletesView';
 
 ReactDOM.render(
   <React.StrictMode>
