@@ -200,17 +200,15 @@ background: #090b19;
       <div class="wrapper">
         <div class="project-description-wrapper">
           <div id="w-node-_0afe1988-388e-b5cb-404e-8a553a0bef5a-0c13baf9" class="project-description top-grey-border">
-            <div id="w-node-c1386cff-6b52-7e7b-943b-f01eec93797f-0c13baf9" class="w-form">
-              <form id="contact-form" name="email-form" onSubmit="logSubmit(contactForm)" data-name="Email Form" class="form">
+            <!-- assigning the class "w-form" to the div the form is nested in
+            will link the submit button to webflow. The class was removed in order
+            to use logSubmit found in webflow.js file. I alse changed form id to contact-form. id of email-form triggers a page refresh somehow-->
+            <div id="w-node-c1386cff-6b52-7e7b-943b-f01eec93797f-0c13baf9" class="">
+              <form id="contact-form" name="email-form" data-name="Email Form" class="form">
                 <div class="field-wrapper"><label for="name" id="w-node-c1386cff-6b52-7e7b-943b-f01eec937981-0c13baf9" class="field-label">Name</label><input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Your first name" id="name"><input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Your last name" id="name-2"></div>
                 <div class="field-wrapper"><label for="name-3" id="w-node-_5e3db900-a825-6509-a424-cf926f0e51a6-0c13baf9" class="field-label">Email Address</label><input type="email" class="text-field w-node-_5e3db900-a825-6509-a424-cf926f0e51a8-0c13baf9 w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Your email" id="name-3"></div>
                 <div class="field-wrapper"><label for="name-4" id="w-node-_9f611142-c9c4-1dbb-5d72-be5bad231d1e-0c13baf9" class="field-label">Message</label><textarea placeholder="Example Text" maxlength="5000" id="field" name="field" data-name="field" class="text-field large w-node-_9ecb47d5-8f4d-56b8-1721-4ed5246ec8ac-0c13baf9 w-input"></textarea></div>
-                <input 
-                  type="submit" 
-                  value="Submit" 
-                  data-wait="Please wait..." 
-                  id="w-node-c1386cff-6b52-7e7b-943b-f01eec937987-0c13baf9" 
-                  class="submit-button w-button">
+                <input type="submit" value="Submit" data-wait="Please wait..." id="w-node-c1386cff-6b52-7e7b-943b-f01eec937987-0c13baf9" class="submit-button w-button">
               </form>
               <div class="utility-message w-form-done">
                 <div class="success-wrapper">
@@ -222,28 +220,6 @@ background: #090b19;
                 <div>Oops! Something went wrong while submitting the form.</div>
               </div>
             </div>
-            <!-- <div id="w-node-c1386cff-6b52-7e7b-943b-f01eec93797f-0c13baf9" class="w-form">
-              <form id="email-form" name="email-form" onSubmit="logSubmit(contactForm)" data-name="Email Form" class="form">
-                <div class="field-wrapper"><label for="name" id="w-node-c1386cff-6b52-7e7b-943b-f01eec937981-0c13baf9" class="field-label">Name</label><input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Your first name" id="name"><input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Your last name" id="name-2"></div>
-                <div class="field-wrapper"><label for="name-3" id="w-node-_5e3db900-a825-6509-a424-cf926f0e51a6-0c13baf9" class="field-label">Email Address</label><input type="email" class="text-field w-node-_5e3db900-a825-6509-a424-cf926f0e51a8-0c13baf9 w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Your email" id="name-3"></div>
-                <div class="field-wrapper"><label for="name-4" id="w-node-_9f611142-c9c4-1dbb-5d72-be5bad231d1e-0c13baf9" class="field-label">Message</label><textarea placeholder="Example Text" maxlength="5000" id="field" name="field" data-name="field" class="text-field large w-node-_9ecb47d5-8f4d-56b8-1721-4ed5246ec8ac-0c13baf9 w-input"></textarea></div>
-                <input 
-                  type="submit" 
-                  value="Submit" 
-                  data-wait="Please wait..." 
-                  id="w-node-c1386cff-6b52-7e7b-943b-f01eec937987-0c13baf9" 
-                  class="submit-button w-button">
-              </form>
-              <div class="utility-message w-form-done">
-                <div class="success-wrapper">
-                  <h3>Thank you!</h3>
-                  <div class="body-display">Your message has been received.</div>
-                </div>
-              </div>
-              <div class="error-message w-form-fail">
-                <div>Oops! Something went wrong while submitting the form.</div>
-              </div>
-            </div> -->
           </div>
           <div id="w-node-_0afe1988-388e-b5cb-404e-8a553a0bef68-0c13baf9" class="project-features">
             <div class="sticky-services-menu">

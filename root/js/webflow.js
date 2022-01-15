@@ -6,14 +6,16 @@
 //post webflow contributions
 
 function logSubmit(event) {
-  event.stopPropagation();
   event.preventDefault();
-
-  console.log("here",event)
+  console.log(contactFirstName.value, contactLastName.value, contactEmail.value, contactMessage.value)
 
 }
-
+const contactFirstName = document.getElementById('name');
+const contactLastName = document.getElementById('name-2');
+const contactEmail = document.getElementById('name-3');
+const contactMessage = document.getElementById('field');
 const contactForm = document.getElementById('contact-form');
+
 contactForm.addEventListener('submit', logSubmit);
 
 /*!
