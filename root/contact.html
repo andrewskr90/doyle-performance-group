@@ -201,13 +201,15 @@ background: #090b19;
       <div class="wrapper">
         <div class="project-description-wrapper">
           <div id="w-node-_0afe1988-388e-b5cb-404e-8a553a0bef5a-0c13baf9" class="project-description top-grey-border">
-            <!-- assigning the class "w-form" to the div the form is nested in
-            will link the submit button to webflow. The class was removed in order
-            to use logSubmit found in webflow.js file. I alse changed form id to contact-form. id of email-form triggers a page refresh somehow-->
-            <div id="w-node-c1386cff-6b52-7e7b-943b-f01eec93797f-0c13baf9" class="">
+            <!-- the class "w-form" is what links the submit button to webflow. 
+            I added a return to the mailchimp ajax call, bypassing the use of mailchimp.
+            I also changed form id to contact-form, to select it for a custom form submission
+            with the function logSubmitContact
+            id of email-form triggers a page refresh somehow-->
+            <div id="w-node-c1386cff-6b52-7e7b-943b-f01eec93797f-0c13baf9" class="w-form">
               <form id="contact-form" name="email-form" data-name="Email Form" class="form">
                 <div class="field-wrapper"><label for="name" id="w-node-c1386cff-6b52-7e7b-943b-f01eec937981-0c13baf9" class="field-label">Name</label><input type="text" class="text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Your first name" id="name"><input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Your last name" id="name-2"></div>
-                <div class="field-wrapper"><label for="name-3" id="w-node-_5e3db900-a825-6509-a424-cf926f0e51a6-0c13baf9" class="field-label">Email Address</label><input type="email" class="text-field w-node-_5e3db900-a825-6509-a424-cf926f0e51a8-0c13baf9 w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Your email" id="name-3"></div>
+                <div class="field-wrapper"><label for="name-3" id="w-node-_5e3db900-a825-6509-a424-cf926f0e51a6-0c13baf9" class="field-label">Email Address</label><input type="email" class="text-field w-node-_5e3db900-a825-6509-a424-cf926f0e51a8-0c13baf9 w-input" maxlength="256" name="name-3" data-name="Name 3" placeholder="Your email" id="email"></div>
                 <div class="field-wrapper"><label for="name-4" id="w-node-_9f611142-c9c4-1dbb-5d72-be5bad231d1e-0c13baf9" class="field-label">Message</label><textarea placeholder="Example Text" maxlength="5000" id="field" name="field" data-name="field" class="text-field large w-node-_9ecb47d5-8f4d-56b8-1721-4ed5246ec8ac-0c13baf9 w-input"></textarea></div>
                 <input type="submit" value="Submit" data-wait="Please wait..." id="w-node-c1386cff-6b52-7e7b-943b-f01eec937987-0c13baf9" class="submit-button w-button">
               </form>
