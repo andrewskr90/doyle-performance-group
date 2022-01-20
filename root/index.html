@@ -482,16 +482,21 @@ background: #090b19;
               </div>
             </div>
           </div>
+          <!-- the class "w-form" is what links the submit button to webflow. 
+            I added a return to the mailchimp ajax call, bypassing the use of mailchimp.
+            I also changed form id to index-form, to select it for a custom form submission
+            with the function logSubmitIndex
+            id of email-form triggers a page refresh somehow-->
           <div id="w-node-_91bc64b8-353b-a94a-b0a2-353d8cfc61b5-df13bae9" class="form-block w-form">
-            <form id="email-form" name="email-form" data-name="Email Form" class="newsletter-form-wrapper">
+            <form id="index-form" name="email-form" data-name="Email Form" class="newsletter-form-wrapper">
               <div id="w-node-_16d65def-c5d5-fd1d-5298-95653be6a9a3-df13bae9" class="form-column">
                 <div class="sticky-services-menu">
                   <div class="service-menu-list white"><label class="radio-item w-radio">
-                      <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-node-_93871b0e-b4be-09b5-05fe-cb47e8639aea-df13bae9 w-radio-input"></div><input type="radio" data-name="Radio" id="radio" name="radio" value="Radio" style="opacity:0;position:absolute;z-index:-1"><span id="w-node-_93871b0e-b4be-09b5-05fe-cb47e8639aeb-df13bae9" class="list-item-text w-form-label" for="radio">Football</span>
+                      <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-node-_93871b0e-b4be-09b5-05fe-cb47e8639aea-df13bae9 w-radio-input"></div><input type="radio" data-name="Radio" class="w--redirected-checked w--redirected-focus" id="radio" name="radio" value="football" style="opacity:0;position:absolute;z-index:-1"><span id="w-node-_93871b0e-b4be-09b5-05fe-cb47e8639aeb-df13bae9" class="list-item-text w-form-label" for="radio">Football</span>
                     </label><label class="radio-item w-radio">
-                      <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-node-af714f2c-c722-46c7-fb15-8967bc04065b-df13bae9 w-radio-input"></div><input type="radio" data-name="Radio 4" id="radio-4" name="radio" value="Radio" style="opacity:0;position:absolute;z-index:-1"><span id="w-node-af714f2c-c722-46c7-fb15-8967bc04065c-df13bae9" class="list-item-text w-form-label" for="radio-4">Track and Field</span>
+                      <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-node-af714f2c-c722-46c7-fb15-8967bc04065b-df13bae9 w-radio-input"></div><input type="radio" data-name="Radio 4" id="radio-4" name="radio" value="track and field" style="opacity:0;position:absolute;z-index:-1"><span id="w-node-af714f2c-c722-46c7-fb15-8967bc04065c-df13bae9" class="list-item-text w-form-label" for="radio-4">Track and Field</span>
                     </label><label id="w-node-bd4c12fa-0d2a-1a7a-7e67-7e82535f682e-df13bae9" class="radio-item w-radio">
-                      <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-node-bd4c12fa-0d2a-1a7a-7e67-7e82535f682f-df13bae9 w-radio-input"></div><input type="radio" data-name="Radio 5" id="radio-5" name="radio" value="Radio" style="opacity:0;position:absolute;z-index:-1"><span id="w-node-bd4c12fa-0d2a-1a7a-7e67-7e82535f6830-df13bae9" class="list-item-text w-form-label" for="radio-5">Other</span>
+                      <div class="w-form-formradioinput w-form-formradioinput--inputType-custom radio-button w-node-bd4c12fa-0d2a-1a7a-7e67-7e82535f682f-df13bae9 w-radio-input"></div><input type="radio" data-name="Radio 5" id="radio-5" name="radio" value="other" style="opacity:0;position:absolute;z-index:-1"><span id="w-node-bd4c12fa-0d2a-1a7a-7e67-7e82535f6830-df13bae9" class="list-item-text w-form-label" for="radio-5">Other</span>
                     </label></div>
                 </div>
               </div>
