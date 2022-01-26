@@ -6,77 +6,7 @@
 //post webflow contributions
 
 //queries for contact and index page
-const contactFirstName = document.getElementById('name');
-const contactLastName = document.getElementById('name-2');
-const contactEmail = document.getElementById('email');
-const contactMessage = document.getElementById('field');
-const contactForm = document.getElementById('contact-form');
-const radioInput = document.getElementById('radio');
-const radio4Input = document.getElementById('radio-4');
-const radio5Input = document.getElementById('radio-5');
-const indexForm = document.getElementById('index-form')
-let radioSelect = ""
 
-//code for index.html form
-function sendEmailIndex(firstname, lastname, email, radio) {
-	window.Email.send({
-	Host: "smtp.gmail.com",
-	Username : "andrewskr90@gmail.com",
-	Password : "iiugyviddwwyfgeg",
-	To : 'andrewskr90@gmail.com',
-	From : "andrewskr90@gmail.com",
-	Subject : `DPG phone call request from ${firstname} ${lastname}`,
-	Body : `${firstname} ${lastname} has requested to schedule a phone call. They selected -${radio}- as their profession. Email him/her at ${email}`,
-	}).then(
-		message => {
-      indexForm.reset();
-      alert("mail sent successfully");
-  });
-}
-
-function logSubmitIndex(event) {
-  event.preventDefault();
-  if (radioInput) {
-    radioSelect = radioInput.value;
-  } else if (radio4Input) {
-    radioSelect = radio4Input.value;
-  } else if (radio5Input) {
-    radioSelect = radio5Input.value;
-  } else {
-    radioSelect = "none selected"
-  }
-  sendEmailIndex(contactFirstName.value, contactLastName.value, contactEmail.value, radioSelect);
-}
-
-if (indexForm) {
-  indexForm.addEventListener('submit', logSubmitIndex);
-}
-
-// code for contact.html form
-function sendEmailContact(firstname, lastname, email, message) {
-	window.Email.send({
-	Host: "smtp.gmail.com",
-	Username : "andrewskr90@gmail.com",
-	Password : "iiugyviddwwyfgeg",
-	To : 'andrewskr90@gmail.com',
-	From : "andrewskr90@gmail.com",
-	Subject : `DPG Contact form message from ${firstname} ${lastname}`,
-	Body : `From: ${firstname} ${lastname}. Email: ${email}. Message: ${message}`,
-	}).then(
-		message => {
-      contactForm.reset();
-      alert("mail sent successfully");
-  });
-}
-
-function logSubmitContact(event) {
-  event.preventDefault();
-  sendEmailContact(contactFirstName.value, contactLastName.value, contactEmail.value, contactMessage.value);
-
-}
-if (contactForm) {
-  contactForm.addEventListener('submit', logSubmitContact);
-}
 
 
 /*!
